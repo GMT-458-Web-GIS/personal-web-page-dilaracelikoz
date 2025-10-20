@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <link rel="stylesheet" href="stat/base.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img
+          src="stat/img/pp.jpg"
+          alt="Dilara Çeliköz"
+          class="logo-avatar"
+        />
+        <span>Dilara Çeliköz</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="base.html">
+            <span class="nav-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="presentation" focusable="false">
+                <path
+                  d="M12 3.35 3.5 9.62a1 1 0 0 0-.42.81V20a1 1 0 0 0 1 1h5.25a.75.75 0 0 0 .75-.75v-4.5h3.84v4.5a.75.75 0 0 0 .75.75H20a1 1 0 0 0 1-1v-9.57a1 1 0 0 0-.42-.81L12 3.35Z"
+                />
+              </svg>
+            </span>
+            <span class="nav-label">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="me.html" class="active">
+            <span class="nav-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="presentation" focusable="false">
+                <path
+                  d="M12 12.5a4.25 4.25 0 1 0 0-8.5 4.25 4.25 0 0 0 0 8.5Zm0 1.5c-3.37 0-7 1.73-7 4.5v.75A.75.75 0 0 0 5.75 20h12.5a.75.75 0 0 0 .75-.75V18c0-2.77-3.63-4.5-7-4.5Z"
+                />
+              </svg>
+            </span>
+            <span class="nav-label">About Me</span>
+          </a>
+        </li>
+        <li>
+          <a href="map.html">
+            <span class="nav-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="presentation" focusable="false">
+                <path
+                  d="M9.21 4.24 4.1 6.4A1 1 0 0 0 3.5 7.3v12.12a1 1 0 0 0 1.36.93l4.87-1.95 4.54 1.9a1 1 0 0 0 .8 0l5.11-2.16a1 1 0 0 0 .62-.93V4.09a1 1 0 0 0-1.36-.93l-4.87 1.95-4.54-1.9a1 1 0 0 0-.8 0ZM10 7.47l3.5 1.46v7.6L10 15.07Z"
+                />
+              </svg>
+            </span>
+            <span class="nav-label">Map</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <section class="content">
+      <div class="about-section">
+        <h2>About Me</h2>
+        <p class="about-intro">
+          <span aria-hidden="true" class="intro-icon">🌍</span>
+          Curious about the person behind the map? Tap a chapter below to open a
+          polished snapshot of my story from academic milestones to the values
+          that guide my work.
+          <span aria-hidden="true" class="intro-icon">✨</span>
+        </p>
+        <div class="cards-grid">
+          <button class="info-card" data-modal="personal-info">
+            <span>Personal Information</span>
+          </button>
+          <button class="info-card" data-modal="about-myself">
+            <span>About Myself</span>
+          </button>
+          <button class="info-card" data-modal="work-experience">
+            <span>Work Experience</span>
+          </button>
+          <button class="info-card" data-modal="education-training">
+            <span>Education And Training</span>
+          </button>
+          <button class="info-card" data-modal="language-skills">
+            <span>Language Skills</span>
+          </button>
+          <button class="info-card" data-modal="volunteering">
+            <span>Volunteering</span>
+          </button>
+          <button class="info-card" data-modal="skills">
+            <span>Skills</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <div class="modal-overlay" data-close></div>
+    <div
+      class="modal"
+      id="personal-info"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="personal-info-title"
+    >
+      <div class="modal-content">
+        <button class="modal-close" type="button" data-close aria-label="Close">
+          &times;
+        </button>
+        <h3 class="modal-title" id="personal-info-title">
+          Personal Information
+        </h3>
+        <div class="personal-info-modal">
+          <div class="personal-photo-card">
+            <div class="personal-photo-frame">
+              <img
+                src="stat/img/pp.jpg"
+                alt="Portrait of Dilara Çeliköz"
+                class="personal-photo"
+              />
+            </div>
+          </div>
+          <dl class="personal-details">
+            <div class="personal-detail">
+              <dt>Date of Birth</dt>
+              <dd>03 September 2003</dd>
+            </div>
+            <div class="personal-detail">
+              <dt>Nationality</dt>
+              <dd>Turkish</dd>
+            </div>
+            <div class="personal-detail">
+              <dt>Sex</dt>
+              <dd>Female</dd>
+            </div>
+            <div class="personal-detail">
+              <dt>Phone</dt>
+              <dd><a href="tel:+905394665003">(+90) 539 466 5003</a></dd>
+            </div>
+            <div class="personal-detail">
+              <dt>Email</dt>
+              <dd>
+                <a href="mailto:dilaracelikozd@gmail.com"
+                  >dilaracelikozd@gmail.com</a
+                >
+              </dd>
+            </div>
+            <div class="personal-detail">
+              <dt>Address</dt>
+              <dd>Ankara, Turkey</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal"
+      id="about-myself"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="about-myself-title"
+    >
+      <div class="modal-content">
+        <button class="modal-close" type="button" data-close aria-label="Close">
+          &times;
+        </button>
+        <h3 class="modal-title" id="about-myself-title">About Myself</h3>
+        <div class="about-myself-modal">
+          <p class="about-myself-lead">
+            <span aria-hidden="true">🧭</span>
+            I am a fourth-year Geomatics Engineering student driven by a passion
+            for Geographic Information Systems (GIS) and Global Navigation
+            Satellite Systems (GNSS).
+          </p>
+          <p>
+            Alongside a solid technical foundation, I value clear communication,
+            collaborative teamwork, and the blend of analytical thinking with
+            creativity in both engineering and social settings.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal"
+      id="work-experience"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="work-experience-title"
+    >
+      <div class="modal-content">
+        <button class="modal-close" type="button" data-close aria-label="Close">
+          &times;
+        </button>
+        <h3 class="modal-title" id="work-experience-title">Work Experience</h3>
+        <div class="experience-timeline">
+          <article class="experience-card">
+            <div class="experience-header">
+              <span class="experience-icon" aria-hidden="true">🛰️</span>
+              <div>
+                <h4>
+                  ANKA Surveying and Construction Engineering Industry and Trade
+                  Ltd.
+                </h4>
+                <p class="experience-role">
+                  Summer Intern &middot; Ankara, Turkey
+                </p>
+                <p class="experience-date">
+                  17 July 2025 &ndash; 26 August 2025
+                </p>
+              </div>
+            </div>
+            <p>
+              Explored cadastral mapping, urban planning, zoning applications,
+              and expropriation processes while assisting the Geographic
+              Information Systems (GIS) team with data management and analysis.
+            </p>
+          </article>
+          <article class="experience-card">
+            <div class="experience-header">
+              <span class="experience-icon" aria-hidden="true">📡</span>
+              <div>
+                <h4>General Directorate of Mapping</h4>
+                <p class="experience-role">
+                  Summer Intern &middot; Ankara, Turkey
+                </p>
+                <p class="experience-date">
+                  16 July 2024 &ndash; 26 August 2024
+                </p>
+              </div>
+            </div>
+            <p>
+              Developed skills in digital mapping, 3D modeling, geospatial data
+              management, and geospatial software development across Geodesy,
+              Photogrammetry, Cartography, and Military Geography departments.
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal"
+      id="education-training"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="education-training-title"
+    >
+      <div class="modal-content">
+        <button class="modal-close" type="button" data-close aria-label="Close">
+          &times;
+        </button>
+        <h3 class="modal-title" id="education-training-title">
+          Education And Training
+        </h3>
+        <div class="education-list">
+          <article class="education-item">
+            <div class="education-icon" aria-hidden="true">🎓</div>
+            <div>
+              <h4>Bachelor Degree &mdash; Hacettepe University</h4>
+              <p class="education-detail">
+                Department of Geomatics Engineering
+              </p>
+              <p class="education-meta">2021 &middot; Ankara, Turkey</p>
+            </div>
+          </article>
+          <article class="education-item">
+            <div class="education-icon" aria-hidden="true">🏫</div>
+            <div>
+              <h4>High School Diploma &mdash; Ayrancı Anatolian High School</h4>
+              <p class="education-meta">
+                2017 &ndash; 2021 &middot; Ankara, Turkey
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal"
+      id="language-skills"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="language-skills-title"
+    >
+      <div class="modal-content">
+        <button class="modal-close" type="button" data-close aria-label="Close">
+          &times;
+        </button>
+        <h3 class="modal-title" id="language-skills-title">Language Skills</h3>
+        <div class="language-modal">
+          <div class="language-mother-tongue">
+            <p class="language-label">Mother tongue</p>
+            <p class="language-name">Turkish</p>
+          </div>
+          <div
+            class="language-table"
+            role="table"
+            aria-label="Other languages and proficiency levels"
+          >
+            <div class="language-table-row language-table-head" role="row">
+              <span
+                class="language-cell language-name-cell"
+                role="columnheader"
+              >
+                Other languages
+              </span>
+              <span class="language-cell" role="columnheader">Listening</span>
+              <span class="language-cell" role="columnheader">Reading</span>
+              <span class="language-cell" role="columnheader">
+                Spoken production
+              </span>
+              <span class="language-cell" role="columnheader">
+                Spoken interaction
+              </span>
+              <span class="language-cell" role="columnheader">Writing</span>
+            </div>
+            <div class="language-table-row" role="row">
+              <span class="language-cell language-name-cell" role="cell">
+                English
+              </span>
+              <span class="language-cell" role="cell">B2</span>
+              <span class="language-cell" role="cell">B2</span>
+              <span class="language-cell" role="cell">B2</span>
+              <span class="language-cell" role="cell">B2</span>
+              <span class="language-cell" role="cell">B2</span>
+            </div>
+            <div class="language-table-row" role="row">
+              <span class="language-cell language-name-cell" role="cell">
+                German
+              </span>
+              <span class="language-cell" role="cell">B2</span>
+              <span class="language-cell" role="cell">B2</span>
+              <span class="language-cell" role="cell">B2</span>
+              <span class="language-cell" role="cell">B2</span>
+              <span class="language-cell" role="cell">B2</span>
+            </div>
+            <div class="language-table-row" role="row">
+              <span class="language-cell language-name-cell" role="cell">
+                Japanese
+              </span>
+              <span class="language-cell" role="cell">A2</span>
+              <span class="language-cell" role="cell">A2</span>
+              <span class="language-cell" role="cell">A2</span>
+              <span class="language-cell" role="cell">A2</span>
+              <span class="language-cell" role="cell">A2</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal"
+      id="volunteering"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="volunteering-title"
+    >
+      <div class="modal-content">
+        <button class="modal-close" type="button" data-close aria-label="Close">
+          &times;
+        </button>
+        <h3 class="modal-title" id="volunteering-title">Volunteering</h3>
+        <div class="volunteering-modal">
+          <figure class="volunteering-figure">
+            <img
+              src="stat/img/losev.jpg"
+              alt="Volunteer activities supporting children with leukemia"
+              loading="lazy"
+            />
+            <figcaption>
+              LÖSEV - Foundation for Children with Leukemia
+            </figcaption>
+          </figure>
+          <div class="volunteering-details">
+            <p class="volunteering-year">2023</p>
+            <p>
+              During my volunteering with L&ouml;sev, I contributed to awareness
+              activities and family support programs designed for children
+              living with leukemia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal"
+      id="skills"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="skills-title"
+    >
+      <div class="modal-content">
+        <button class="modal-close" type="button" data-close aria-label="Close">
+          &times;
+        </button>
+        <h3 class="modal-title" id="skills-title">Skills</h3>
+        <div class="skills-modal">
+          <p class="modal-intro">
+            A selection of digital tools and platforms I use to transform raw
+            geospatial data into clear, actionable insights.
+          </p>
+          <h4 class="modal-subtitle">
+            <span class="modal-subtitle-icon" aria-hidden="true">💻</span>
+            Digital Skills
+          </h4>
+          <ul class="skills-list" aria-label="Digital skills">
+            <li class="skill-item">
+              <span class="skill-icon" aria-hidden="true">📊</span>
+              <span>Microsoft Excel</span>
+            </li>
+            <li class="skill-item">
+              <span class="skill-icon" aria-hidden="true">🗺️</span>
+              <span>GIS</span>
+            </li>
+            <li class="skill-item">
+              <span class="skill-icon" aria-hidden="true">🐍</span>
+              <span>Python</span>
+            </li>
+            <li class="skill-item">
+              <span class="skill-icon" aria-hidden="true">📚</span>
+              <span>SQL</span>
+            </li>
+            <li class="skill-item">
+              <span class="skill-icon" aria-hidden="true">🧭</span>
+              <span>ArcGIS</span>
+            </li>
+            <li class="skill-item">
+              <span class="skill-icon" aria-hidden="true">🧮</span>
+              <span>Netcad</span>
+            </li>
+            <li class="skill-item">
+              <span class="skill-icon" aria-hidden="true">🚁</span>
+              <span>UAV Data Processing</span>
+            </li>
+            <li class="skill-item">
+              <span class="skill-icon" aria-hidden="true">📐</span>
+              <span>AutoCAD</span>
+            </li>
+            <li class="skill-item">
+              <span class="skill-icon" aria-hidden="true">🧩</span>
+              <span>Agisoft Metashape</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script>
+      const cards = document.querySelectorAll(".info-card");
+      const modals = document.querySelectorAll(".modal");
+      const overlay = document.querySelector(".modal-overlay");
+      const closers = document.querySelectorAll("[data-close]");
+      const closeModal = () => {
+        modals.forEach((modal) => modal.classList.remove("open"));
+        if (overlay) {
+          overlay.classList.remove("open");
+        }
+        document.body.classList.remove("modal-open");
+      };
+      const openModal = (id) => {
+        const modal = document.getElementById(id);
+        if (!modal) return;
+        closeModal();
+        modal.classList.add("open");
+        if (overlay) {
+          overlay.classList.add("open");
+        }
+        document.body.classList.add("modal-open");
+        const focusable = modal.querySelector(".modal-close");
+        if (focusable) {
+          focusable.focus();
+        }
+      };
+      cards.forEach((card) => {
+        card.addEventListener("click", () => openModal(card.dataset.modal));
+      });
+      closers.forEach((closer) => {
+        closer.addEventListener("click", closeModal);
+      });
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          closeModal();
+        }
+      });
+      if (overlay) {
+        overlay.addEventListener("click", closeModal);
+      }
+    </script>
+  </body>
+</html>
