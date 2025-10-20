@@ -1,55 +1,101 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Map — A1</title>
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@latest/ol.css">
-
-  <link rel="stylesheet" href="../stat/base.css">
-</head>
-<body>
-  <nav class="navbar">
-    <h2 class="logo">Dilara Çeliköz</h2>
-    <ul class="nav-links">
-      <li><a href="base.html">Home</a></li>
-      <li><a href="me.html">About Me</a></li>
-      <li><a href="map.html" class="active">Map</a></li>
-    </ul>
-  </nav>
-
-  <main class="page-wrapper">
-    <section class="map-section">
-      <div class="map-card">
-        <div id="map" class="map-box"></div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Map — A1</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/ol@latest/ol.css"
+    />
+    <link rel="stylesheet" href="../stat/base.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img
+          src="../stat/img/pp.jpg"
+          alt="Dilara Çeliköz"
+          class="logo-avatar"
+        />
+        <span>Dilara Çeliköz</span>
       </div>
-    </section>
-
-    <aside class="side-section">
-      <div class="side-card">
-        <h3>Placeholder</h3>
-        <p>Lorem Ipsum that will be charged by me soon. Dilara Çeliköz</p>
-      </div>
-    </aside>
-  </main>
-
-  <script src="https://cdn.jsdelivr.net/npm/ol@latest/dist/ol.js"></script>
-
-  <script src="../stat/js/base.js"></script>
-
-  <script>
-    window.addEventListener('load', () => {
-      if (window.map && typeof window.map.updateSize === 'function') {
-        setTimeout(() => window.map.updateSize(), 150);
-      }
-    });
-
-    window.addEventListener('resize', () => {
-      if (window.map && typeof window.map.updateSize === 'function') {
-        window.map.updateSize();
-      }
-    });
-  </script>
-</body>
+      <ul class="nav-links">
+        <li>
+          <a href="base.html">
+            <span class="nav-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="presentation" focusable="false">
+                <path
+                  d="M12 3.35 3.5 9.62a1 1 0 0 0-.42.81V20a1 1 0 0 0 1 1h5.25a.75.75 0 0 0 .75-.75v-4.5h3.84v4.5a.75.75 0 0 0 .75.75H20a1 1 0 0 0 1-1v-9.57a1 1 0 0 0-.42-.81L12 3.35Z"
+                />
+              </svg>
+            </span>
+            <span class="nav-label">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="me.html">
+            <span class="nav-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="presentation" focusable="false">
+                <path
+                  d="M12 12.5a4.25 4.25 0 1 0 0-8.5 4.25 4.25 0 0 0 0 8.5Zm0 1.5c-3.37 0-7 1.73-7 4.5v.75A.75.75 0 0 0 5.75 20h12.5a.75.75 0 0 0 .75-.75V18c0-2.77-3.63-4.5-7-4.5Z"
+                />
+              </svg>
+            </span>
+            <span class="nav-label">About Me</span>
+          </a>
+        </li>
+        <li>
+          <a href="map.html" class="active">
+            <span class="nav-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="presentation" focusable="false">
+                <path
+                  d="M9.21 4.24 4.1 6.4A1 1 0 0 0 3.5 7.3v12.12a1 1 0 0 0 1.36.93l4.87-1.95 4.54 1.9a1 1 0 0 0 .8 0l5.11-2.16a1 1 0 0 0 .62-.93V4.09a1 1 0 0 0-1.36-.93l-4.87 1.95-4.54-1.9a1 1 0 0 0-.8 0ZM10 7.47l3.5 1.46v7.6L10 15.07Z"
+                />
+              </svg>
+            </span>
+            <span class="nav-label">Map</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main class="page-wrapper">
+      <section class="map-section">
+        <div class="map-card">
+          <div
+            id="map"
+            class="map-box"
+            role="application"
+            aria-label="Türkiye haritası"
+          ></div>
+        </div>
+      </section>
+      <aside class="side-section" aria-labelledby="places-title">
+        <div class="side-card">
+          <div class="side-card__header">
+            <h3 id="places-title">Restaurants</h3>
+            <p>
+              You can click on the markers on the map or the cards below to view
+              detailed information.
+            </p>
+          </div>
+          <div class="place-list" id="placeList" aria-live="polite"></div>
+        </div>
+      </aside>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/ol@latest/dist/ol.js"></script>
+    <script src="../stat/js/base.js"></script>
+    <script>
+      window.addEventListener("load", () => {
+        if (window.map && typeof window.map.updateSize === "function") {
+          setTimeout(() => window.map.updateSize(), 150);
+        }
+      });
+      window.addEventListener("resize", () => {
+        if (window.map && typeof window.map.updateSize === "function") {
+          window.map.updateSize();
+        }
+      });
+    </script>
+  </body>
 </html>
