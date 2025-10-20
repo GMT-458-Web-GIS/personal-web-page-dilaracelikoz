@@ -6,7 +6,7 @@ const placeData = [
     shortDescription: "The pearl of Atakule, the symbol of Ankara",
     longDescription:
       "Naya Restaurant is one of my favorite places to eat. The atmosphere is warm and elegant, and the staff are always friendly and helpful. The dishes are delicious, especially the main courses, which are full of flavor. Prices are fair for the quality you get. I always enjoy spending time there.",
-    image: "../stat/img/naya.png",
+    image: "stat/img/naya.png",
   },
   {
     id: "liman",
@@ -15,7 +15,7 @@ const placeData = [
     shortDescription: "The rising star of the Aegean, the charm of Kuşadası",
     longDescription:
       "Right on the Aegean coast—literally right on the coast, almost in the sea!—it offers an amazing evening experience with your beloved friends and family, away from the summer hustle and bustle of the entire Kuşadası, among the sound of the waves. One of the most beloved features of this restaurant is that you can bring the fish you caught during the day and have the experts cook it for you...",
-    image: "../stat/img/liman.jpg",
+    image: "stat/img/liman.jpg",
   },
   {
     id: "visorante",
@@ -24,7 +24,7 @@ const placeData = [
     shortDescription: "Flavors meet the view of Ortaköy",
     longDescription:
       "Visorante is one of my favorite restaurants mainly because of its breathtaking view. I love enjoying a delicious meal while gazing over the city lights from the panoramic windows. The calm atmosphere and classy design make every visit feel special. It’s a perfect spot to unwind and appreciate both the scenery and the food.",
-    image: "../stat/img/visorante.jpeg",
+    image: "stat/img/visorante.jpeg",
   },
 ];
 window.map = new ol.Map({
